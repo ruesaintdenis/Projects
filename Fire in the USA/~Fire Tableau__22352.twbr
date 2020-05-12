@@ -1,0 +1,1176 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook source-build='2020.1.2 (20201.20.0326.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (ExtractedData)' inline='true' name='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ExtractedData' name='excel-direct.1l7limx1biw3tl1cmol6h1pvwn62'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/denis/Desktop/Projects/Fire in the USA/Imported Data/ExtractedData.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='ZoneGeoCode' name='textscan.123su8j0o85h161h5zgkp186524e'>
+            <connection class='textscan' directory='C:/Users/denis/Desktop/Projects/Fire in the USA/Imported Data' filename='ZoneGeoCode.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1l7limx1biw3tl1cmol6h1pvwn62' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:S57:no:A1:S57:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Total Calls by Incident Type' ordinal='1' />
+            <column datatype='string' name='Incident Type' ordinal='2' />
+            <column datatype='integer' name='Total Calls by Zone' ordinal='3' />
+            <column datatype='string' name='Zone' ordinal='4' />
+            <column datatype='string' name='City' ordinal='5' />
+            <column datatype='string' name='States' ordinal='6' />
+            <column datatype='integer' name='Total Calls per Weekday' ordinal='7' />
+            <column datatype='string' name='Weekday' ordinal='8' />
+            <column datatype='integer' name='EMS Transports Value' ordinal='9' />
+            <column datatype='string' name='EMS Transport Boolean' ordinal='10' />
+            <column datatype='integer' name='Value (in millions)' ordinal='11' />
+            <column datatype='string' name='Fire Property' ordinal='12' />
+            <column datatype='integer' name='Fire Fatality' ordinal='13' />
+            <column datatype='integer' name='Injury Total' ordinal='14' />
+            <column datatype='string' name='Injury Person' ordinal='15' />
+            <column datatype='integer' name='Population' ordinal='16' />
+            <column datatype='integer' name='Total FTE' ordinal='17' />
+            <column datatype='integer' name='Operating Budget (in million)' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Calls by Incident Type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Calls by Incident Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Total Calls by Incident Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Incident Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Incident Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Calls by Zone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Calls by Zone]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Total Calls by Zone</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zone</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zone]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Zone</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>States</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[States]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>States</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Calls per Weekday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Calls per Weekday]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Total Calls per Weekday</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekday</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Weekday]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Weekday</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMS Transports Value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EMS Transports Value]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>EMS Transports Value</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMS Transport Boolean</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EMS Transport Boolean]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>EMS Transport Boolean</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value (in millions)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Value (in millions)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Value (in millions)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fire Property</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Fire Property]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Fire Property</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fire Fatality</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fire Fatality]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Fire Fatality</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Injury Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Injury Total]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Injury Total</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Injury Person</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Injury Person]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Injury Person</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total FTE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total FTE]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Total FTE</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Budget (in million)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Budget (in million)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Operating Budget (in million)</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:S57:no:A1:S57:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg Calls per Day by Zone' datatype='real' name='[Calculation_1572882219841757184]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='avg([Total Calls by Incident Type])' />
+      </column>
+      <column caption='Incidents per Day ' datatype='integer' datatype-customized='true' name='[Calculation_212513657018896384]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT(SUM([Total Calls by Incident Type])/365)' />
+      </column>
+      <column caption='Incidents per 1000 population' datatype='integer' datatype-customized='true' name='[Calculation_212513657019215873]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT((sum([Total Calls by Incident Type])/SUM([Population]))*1000)' />
+      </column>
+      <column caption='EMS Transports per Dayy' datatype='real' name='[Calculation_212513657058918402]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([EMS Transports])/365' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Fire Property]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Total Calls by Incident Type]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Value (in millions)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Point Id' datatype='integer' name='[point id]' role='dimension' type='ordinal' />
+      <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fire Property]' derivation='None' name='[none:Fire Property:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Total Calls by Incident Type]' derivation='Sum' name='[sum:Total Calls by Incident Type:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Value (in millions)]' derivation='Sum' name='[sum:Value (in millions):qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.388594' measure-ordering='alphabetic' measure-percentage='0.611406' show-hidden-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[avg:latitude:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[sum:Value (in millions):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[sum:Total Calls by Incident Type:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[avg:longitude:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Zone:nk]' palette='tableau-20' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Zone 103&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Zone 11&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Zone 63&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Zone 12C&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Zone 52&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Zone 61&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Zone 24&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Fire Property:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fire Loss&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Property Saved&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Fire Property:nk]&#10;[:Measure Names]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Property Saved&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Fire Loss&quot;</bucket>
+            </map-pri>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 3' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Zone' />
+        <param name='target' value='Sheet 3' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated) 1' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 3 (2)' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Zone' />
+        <param name='target' value='Sheet 3 (2)' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (ExtractedData)' name='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m'>
+            <column datatype='string' name='[EMS Transport Boolean]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[EMS Transports Value]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[EMS Transport Boolean]' derivation='None' name='[none:EMS Transport Boolean:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EMS Transports Value]' derivation='Sum' name='[pcto:sum:EMS Transports Value:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[EMS Transports Value]' derivation='Sum' name='[sum:EMS Transports Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:EMS Transport Boolean:nk]' />
+              <text column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[pcto:sum:EMS Transports Value:qk:2]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[sum:EMS Transports Value:qk]</rows>
+        <cols>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{E5B79D4E-8EDB-4F3A-A2B5-F0288F44DF4E}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (ExtractedData)' name='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m'>
+            <column datatype='integer' name='[Total Calls by Zone]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Zone (ZoneGeoCode.csv)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Zone (ZoneGeoCode.csv)]' derivation='None' name='[none:Zone (ZoneGeoCode.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[point id]' derivation='None' name='[none:point id:ok]' pivot='key' type='ordinal' />
+            <column caption='Point Id' datatype='integer' name='[point id]' role='dimension' type='ordinal' />
+            <column-instance column='[Total Calls by Zone]' derivation='Sum' name='[sum:Total Calls by Zone:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:ok]'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 103&quot;' />
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 11&quot;' />
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 12C&quot;' />
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 24&quot;' />
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 52&quot;' />
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 61&quot;' />
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 63&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk]</column>
+            <column>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[sum:Total Calls by Zone:qk]' num-steps='12' palette='red_black_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='Zip Code' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+            <encodings>
+              <path column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:point id:ok]' />
+              <lod column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone (ZoneGeoCode.csv):nk]' />
+              <color column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[sum:Total Calls by Zone:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='198' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[avg:latitude:qk]</rows>
+        <cols>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{7C2988EC-768C-4EF5-B841-B0FCD63E7E2E}' />
+    </worksheet>
+    <worksheet name='Sheet 2 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (ExtractedData)' name='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m'>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Zone (ZoneGeoCode.csv)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Zone (ZoneGeoCode.csv)]' derivation='None' name='[none:Zone (ZoneGeoCode.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[point id]' derivation='None' name='[none:point id:ok]' pivot='key' type='ordinal' />
+            <column caption='Point Id' datatype='integer' name='[point id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:ok]'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone (ZoneGeoCode.csv):nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Zone 12C&quot;</bucket>
+              <bucket>&quot;Zone 11&quot;</bucket>
+              <bucket>&quot;Zone 103&quot;</bucket>
+              <bucket>&quot;Zone 24&quot;</bucket>
+              <bucket>&quot;Zone 61&quot;</bucket>
+              <bucket>&quot;Zone 63&quot;</bucket>
+              <bucket>&quot;Zone 52&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 103&quot;' />
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 11&quot;' />
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 12C&quot;' />
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 24&quot;' />
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 52&quot;' />
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 61&quot;' />
+              <groupfilter function='member' level='[none:Zone:nk]' member='&quot;Zone 63&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk]</column>
+            <column>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='Zip Code' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+            <encodings>
+              <path column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:point id:ok]' />
+              <color column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone (ZoneGeoCode.csv):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='198' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[avg:latitude:qk]</rows>
+        <cols>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{16A44962-378F-43CD-8B02-7CA20328717C}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (ExtractedData)' name='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m'>
+            <column datatype='integer' name='[Total Calls by Zone]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[Total Calls by Zone]' derivation='Avg' name='[avg:Total Calls by Zone:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Calls by Zone]' derivation='Sum' name='[pcto:sum:Total Calls by Zone:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Zone 12C&quot;</bucket>
+              <bucket>&quot;Zone 11&quot;</bucket>
+              <bucket>&quot;Zone 103&quot;</bucket>
+              <bucket>&quot;Zone 24&quot;</bucket>
+              <bucket>&quot;Zone 61&quot;</bucket>
+              <bucket>&quot;Zone 63&quot;</bucket>
+              <bucket>&quot;Zone 52&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[avg:Total Calls by Zone:qk]' field-type='quantitative' major-origin='0.0' major-spacing='1000.0' max='30000.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[avg:Total Calls by Zone:qk]' scope='rows' value='Total Calls by Zone' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk]' />
+              <text column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[pcto:sum:Total Calls by Zone:qk:2]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='on' />
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-style' value='normal' />
+                <format attr='text-decoration' value='none' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[avg:Total Calls by Zone:qk]</rows>
+        <cols>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{FDF14951-EA7C-4720-B59F-0F95357AD4CB}' />
+    </worksheet>
+    <worksheet name='Sheet 3 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (ExtractedData)' name='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m'>
+            <column datatype='integer' name='[Total Calls by Zone]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[Total Calls by Zone]' derivation='Avg' name='[avg:Total Calls by Zone:vtsum:qk]' pivot='key' type='quantitative' visual-totals='Sum' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Calls by Zone]' derivation='Sum' name='[pcto:sum:Total Calls by Zone:qk:10]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='ColumnInPane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:ok]'>
+            <groupfilter from='2012' function='range' level='[none:Year:ok]' to='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Zone 12C&quot;</bucket>
+              <bucket>&quot;Zone 11&quot;</bucket>
+              <bucket>&quot;Zone 103&quot;</bucket>
+              <bucket>&quot;Zone 24&quot;</bucket>
+              <bucket>&quot;Zone 61&quot;</bucket>
+              <bucket>&quot;Zone 63&quot;</bucket>
+              <bucket>&quot;Zone 52&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[avg:Total Calls by Zone:vtsum:qk]' />
+              <text column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[pcto:sum:Total Calls by Zone:qk:10]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>([federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:ok] / [federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk])</rows>
+        <cols />
+        <subtotals>
+          <column>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:ok]</column>
+        </subtotals>
+      </table>
+      <simple-id uuid='{1C0BCD3F-A607-41C4-8C38-56D18BEAD753}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (ExtractedData)' name='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m'>
+            <column caption='Avg Calls per Day by Zone' datatype='real' name='[Calculation_1572882219841757184]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='avg([Total Calls by Incident Type])' />
+            </column>
+            <column datatype='integer' name='[Total Calls by Incident Type]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Zone]' role='dimension' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Zone]' derivation='None' name='[none:Zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1572882219841757184]' derivation='User' name='[usr:Calculation_1572882219841757184:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[usr:Calculation_1572882219841757184:qk]</rows>
+        <cols>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{57E1230C-CE91-49B1-BA56-A5F9BE17BDD7}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (ExtractedData)' name='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nuzdqz1o1v8rb1e20bwl0y44e8m'>
+            <column datatype='string' name='[Fire Property]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Calls by Incident Type]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Value (in millions)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Fire Property]' derivation='None' name='[none:Fire Property:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Incident Type]' derivation='None' name='[none:Incident Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Calls by Incident Type]' derivation='Sum' name='[sum:Total Calls by Incident Type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Value (in millions)]' derivation='Sum' name='[sum:Value (in millions):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Fire Property:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Fire Property:nk]' />
+              <groupfilter function='member' level='[none:Fire Property:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Incident Type:nk]'>
+            <groupfilter function='member' level='[none:Incident Type:nk]' member='&quot;Fires&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Incident Type:nk]</column>
+            <column>[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Fire Property:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[sum:Value (in millions):qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[sum:Total Calls by Incident Type:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[:Measure Names]' />
+              <lod column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Fire Property:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[sum:Value (in millions):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Fire Property:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[sum:Total Calls by Incident Type:qk] + [federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[sum:Value (in millions):qk])</rows>
+        <cols>([federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Incident Type:nk] * [federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:qk])</cols>
+      </table>
+      <simple-id uuid='{5B23A7E9-8E9C-4BD0-A682-8CA73852C93C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:EMS Transport Boolean:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{3F1FB2A1-70FD-4968-9BE9-F850E9D3865A}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:ok]' type='filter' />
+            <card param='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[sum:Total Calls by Zone:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{0575548D-F76A-43A7-A4EA-549470C2A3C8}' />
+    </window>
+    <window class='worksheet' name='Sheet 2 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Year:ok]' type='filter' />
+            <card param='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone (ZoneGeoCode.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{FC1A413E-EC3F-43E9-AEC2-235023C80912}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0DE601EA-30ED-4AE2-9347-7527B3623171}' />
+    </window>
+    <window class='worksheet' name='Sheet 3 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BBC1F065-ACED-4A6D-B961-13FB15058A5A}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Zone:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7BB76C4A-2478-4376-BA37-7EF229FF41A6}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[:Measure Names]' type='color' />
+            <card pane-specification-id='2' param='[federated.0nuzdqz1o1v8rb1e20bwl0y44e8m].[none:Fire Property:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{D5BB486D-6267-4C8C-9634-A90C4BD9734A}' />
+    </window>
+  </windows>
+</workbook>
